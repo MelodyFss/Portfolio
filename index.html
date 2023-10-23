@@ -4,15 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <tittle>Melody Ponczko</tittle>
+        <!-- <tittle>Melody Ponczko</tittle> -->
         <!--==CSS==-->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/skins/color-1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--===Style Switcher==-->
+        <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+        <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+        <link rel="stylesheet" href="css/style-switcher.css">
     </head>
     <body>
         <!--==---------------------Main container start--------------------==-->
-        < class="main-container">
+        <div class="main-container">
              <!--==-------------------------Aside start-------------------==-->
              <div class="aside">
                 <div class="logo">
@@ -22,18 +29,18 @@
                     <span></span>
                 </div>
                 <ul class="nav">
-                    <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                    <li><a href="#" ><i class="fa fa-list"></i>Services</a></li>
-                    <li><a href="#" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#services" ><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
                 </ul>
              </div>
               <!--==---------------------Aside End---------------------==-->
               <!--==-------------Main content start-----------==-->
               <div class="main-content">
                 <!--==---------Home section start-------=-->
-                <section class="home section hidden">
+                <section class="home section" id="home">
                     <div class="container">
                         <div class="row">
                             <div class="home-info padd-15">
@@ -52,7 +59,7 @@
                 </section>
                  <!--==----------------Home section End---------------==-->
                  <!--==---------About section start-------=-->
-                 <section class="about sectio hidden">
+                 <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -238,7 +245,7 @@
                  </section>
                  <!--==---------About section End-------=-->
                   <!--==---------Services section start-------=-->
-                  <section class="service section hidden">
+                  <section class="service section" id="services">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -330,7 +337,7 @@
                   </section>
                    <!--==---------Services section end-------=-->
                    <!--==---------Portfolio section Start-------=-->
-                   <section class="portfolio section hidden">
+                   <section class="portfolio section"  id="portfolio">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -376,15 +383,15 @@
                    </section>
                    <!--==---------Portfolio section end-------=-->
                    <!------=======Contact section start=======-->
-                   <section class="contact section">
+                   <section class="contact section" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
                                 <h2>Contact Me</h2>
                             </div>
                         </div>
-                        <h3 class="contact-title">Have you any questions?</h3>
-                        <h4 class="contact-sub-title">I'm at your service!</h4>
+                        <h3 class="contact-title padd-15">Have you any questions?</h3>
+                        <h4 class="contact-sub-title padd-15">I'm at your service!</h4>
                         <div class="row">
                             <!------=======Contact info item start=======-->
                             <div class="contact-info-item padd-15">
@@ -407,6 +414,51 @@
                                 <p>(inserte linkedin url)</p>
                             </div>
                              <!------=======Contact info item end=======-->
+                              <!------=======Contact info item start=======-->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                <h4>website</h4>
+                                <p>website</p>
+                            </div>
+                             <!------=======Contact info item end=======-->
+                        </div>
+                        <h3 class="contact-title padd-15">Send me an email!</h3>
+                        <h4 class="contact-sub-title padd-15">I'm very responsive to messages</h4>
+                        <!-- ==== Contact Form======-->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                          <textarea name=""class="form-control" id="" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                       <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                    </section>
@@ -415,7 +467,27 @@
         <!--==----------Main content end-------------==-->
         </div>
         <!--==----------Main container end-------------==-->
+         <!--==----------Style switcher start-------------==-->
+         <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas"></i>
+            </div>
+            <h4>Theme  Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+         </div>
+          <!--==----------Style switcher end-------------==-->
         <!--==-------------JS files--------==-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
     </body>
 </html>
