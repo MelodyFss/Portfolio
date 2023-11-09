@@ -520,10 +520,10 @@ padding-bottom: 0;
 h4 {
     color: var(--text-black-900);
 }
-.about .about-content .timeline .timeline--subtitle {
+.about .about-content .timeline .timeline--subtitle{
     font-size: 16px;
-    font-weight: 600;
-   
+    color: var(--text-black-700);
+
 }
 
 .about .about-content .timeline .timeline-text {
