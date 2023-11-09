@@ -511,7 +511,7 @@ padding-bottom: 0;
 }
 .about .about-content .timeline .timeline-title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom:15px;
     text-transform: capitalize;
    color: var(--text-black-900);
@@ -520,7 +520,11 @@ padding-bottom: 0;
 h4 {
     color: var(--text-black-900);
 }
-
+.about .about-content .timeline .timeline--subtitle {
+    font-size: 16px;
+    font-weight: 600;
+   
+}
 
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
@@ -599,16 +603,56 @@ font-weight: 500;
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
+    width: 100%;
 }
 .portfolio .portfolio-item-inner {
+    box-sizing: border-box;
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    display: flex;
+    position: relative;
+    transition: all .5s;
 }
-.portfolio .portfolio-item-inner .portfolio-img img {
+/* .portfolio .portfolio-item-inner .portfolio-img {
+    position: relative;
+} */
+.portfolio .portfolio-item-inner .portfolio-img Img {
+   
     width: 100%;
     display: block;
+ 
+}
+.portfolio .portfolio-item-inner .portfolio-img .portfolio-text {
+    padding-top: 30px;
+    padding-left: 85px;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    color:white;
+    /* text-shadow: 1px 2px 4px var(--skin-color); */
+    background-image:linear-gradient( rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.375));
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s;
+}
+.portfolio .portfolio-item-inner .portfolio-img .portfolio-text h1 {
+    text-align: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+/* .portfolio .portfolio-item-inner .portfolio-img img:hover {
+    transform: scale(1.09);
+} */
+.portfolio .portfolio-item-inner .portfolio-img .portfolio-text:hover {
+    opacity: 1;
 }
 .portfolio .portfolio-item-inner:hover {
     /* border-radius: 10px; */
