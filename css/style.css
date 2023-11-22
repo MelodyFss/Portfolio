@@ -622,10 +622,8 @@ font-weight: 500;
     position: relative;
 } */
 .portfolio .portfolio-item-inner .portfolio-img Img {
-   
     width: 100%;
     display: block;
- 
 }
 .portfolio .portfolio-item-inner .portfolio-img .portfolio-text {
     padding-top: 30px;
