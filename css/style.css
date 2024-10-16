@@ -6,17 +6,7 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
-body.dark {
-    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.571)),url("../Img/red.png");
-    background-size: fill;
-    --bg-black-900:#151515;
-    --bg-black-900:#ffffff;
-    --bg-black-100:#ffffff;
-    --bg-black-50:#ffffff;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-    
-}
+
 /* El video no se muestra por defecto */
 #bg-video {
     display: none;
