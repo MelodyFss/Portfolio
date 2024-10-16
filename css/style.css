@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Damion&family=Poppins:wght@200;300;400;500;600&display=swap');@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 :root {
-<<<<<<< HEAD
     --bg-black-900:#f2f2fc;
     --bg-black-100:#f2f2ff;
     --bg-black-50:#e8dfec;
@@ -11,7 +10,6 @@ body.dark {
     background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.571)),url("../Img/red.png");
     background-size: fill;
     --bg-black-900:#151515;
-=======
     --bg-black-900:#ffffff;
     --bg-black-100:#ffffff;
     --bg-black-50:#ffffff;
@@ -90,7 +88,6 @@ body.dark {
     object-fit: cover;
 } */
 
->>>>>>> 1f96913 (Agregado video de fondo para el modo claro y ajustes en el CSS)
 body {
     line-height: 1.5;
     background: var(--bg-black-900);
